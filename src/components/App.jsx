@@ -28,11 +28,13 @@ export default class App extends Component {
         if (res.ok) {
           return res.json();
         }
-        return Promise.reject(new Error('Failed to find any images'));
+        return Promise.reject(
+          new Error('Вибачте, виникла непередбачена помилка')
+        );
       })
       .then(pictures => {
         if (!pictures.total) {
-          toast.error('Did find anything, mate');
+          toast.error('Невірний пошуковий запит');
         }
         const selectedProperties = pictures.hits.map(
           ({ id, largeImageURL, webformatURL }) => {

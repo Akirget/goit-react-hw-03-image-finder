@@ -16,7 +16,9 @@ export default class Searchbar extends Component {
     event.preventDefault();
 
     if (this.state.query.trim() === '') {
-      toast.error('Enter your search query');
+      toast.error(
+        'Введіть будь ласка пошуковий запит, щоб ми знайшли Вам картинки'
+      );
       return;
     }
 

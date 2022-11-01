@@ -31,12 +31,12 @@
 .searchFormButton {
   display: inline-block;
 
-  border: 0;
-  opacity: 0.6;
+  border: 3px solid #001988;
+  opacity: 0.8;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   outline: none;
-  background-color: #a9b9ff;
+  background-color: #001988;
   text-align: center;
 }
 
